@@ -1,0 +1,150 @@
+
+$theme-color : #1d9bf0;
+
+.home{
+    padding: 20px;
+}
+
+.header{
+    
+    
+    img, svg{
+        height: 40px;
+    }
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:980px) {
+        flex-direction: column;
+            
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        @media (max-width:980px) {
+            margin-bottom: 13px;
+            
+       }
+        h2{
+            color: $theme-color ;
+            margin-right: 15px;
+             font-size: 1.5em;
+             font-weight: 700;
+        }
+
+        input{
+            padding: 8px 18px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline-color: $theme-color;
+            font-family: 'Poppins';
+            color: #000000b7;
+            @media (max-width:980px) {
+                display: none;
+                
+           }
+        }
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media (max-width:980px) {
+            justify-content: space-between;
+            // width: 100%;
+            margin-right: 30px;
+            
+       }
+    
+
+        .noti{
+            svg{
+               height: 25px; 
+               margin-right: 23px;
+                cursor: pointer;
+                @media (max-width:980px) {
+                    display: none;
+                    margin-right: initial;
+               }
+            }
+        }
+
+        .profile{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 10px;
+             background: #ebebeb;
+            border-radius: 25px;
+            padding: 7px 20px;
+            @media (max-width:980px) {
+                margin-left: initial;
+                width: 70%;
+                // padding: 7px 5px;
+                justify-content: center;
+                
+           }
+
+            img{
+              height: 28px;
+              border-radius: 50%;
+            }
+            p{
+                margin-left: 6px;
+                font-size: 0.9em;
+                font-size: 700;
+                @media (max-width:980px) {
+                    font-size: 0.85em;
+                    
+               }
+            }
+        }
+    }
+
+    
+}
+
+.sign-out{
+    margin-top: 15px;
+
+    button{
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-family: 'Poppins';
+        font-size: 1em;
+        font-weight: 600;
+        outline: none;
+        border: none;
+        color: #fff;
+        background: $theme-color;
+        cursor: pointer;
+    }
+}
+
+.log{
+    margin-left: 10px;
+    border-radius: 25px;
+    padding: 10px 22px;
+    cursor: pointer;
+    background-color: $theme-color;
+    @media (max-width:980px) {
+        padding: 13px 0;
+        text-align: center;
+         width: 150px;
+   }
+
+    span{
+        font-size: 1em;
+        font-weight: 600;
+        color: #fff;
+        @media (max-width:980px) {
+            font-size: 0.98em;
+            
+             
+        }
+    }
+}

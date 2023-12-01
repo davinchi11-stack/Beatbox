@@ -1,0 +1,257 @@
+$theme-color : #1d9bf0;
+.main-outlet{
+    margin-top: 20px;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profile-main{
+    width: 20%;
+    // background-color: red;
+    height: 100vh;
+    position: relative;
+    position: sticky;
+    top: 0;
+    @media (max-width:1173px) {
+        display: none;
+        
+   }
+    
+    
+}
+
+.profile-one{
+    background-color: #ebebeb;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+   
+    // top: 0;
+    // position: fixed;
+   
+
+   .cover-image{
+     width: 250px;
+     height: 75px;
+     background-color: $theme-color;
+     border-radius: 10px 10px 0 0px;
+     position: relative;
+   }
+
+    .info{
+        text-align: center;
+        border-bottom: 1px solid #0000001c;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40px;
+        
+        img{
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        h3{
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            
+        }
+        p{
+            font-size: 0.85em;
+            color: #00000092;
+            margin-bottom: 10px;
+        }
+
+        span{
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+    }
+
+    .profile-two{
+        position: relative;
+        top: 180px;
+        text-align: center;
+
+        .follow{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+            color: #00000092;
+            span{
+                display: block;
+                 
+                &.follow-n{
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                &.name{
+                font-size: 0.95em;
+                }
+            }
+        
+
+
+        }
+
+        .pro{
+            margin-top: 20px;
+
+            a{
+                color: $theme-color;
+                text-decoration: none;
+                font-size: 0.8em;
+                font-weight: 600;
+            }
+        }
+        
+    }
+
+}
+
+.content-body{
+ width: 53%;
+ padding: 10px;
+ @media (max-width:980px) {
+    width: 100%;
+    
+}
+@media (max-width:1160px) {
+    width: 100%;
+    
+}
+
+
+ .post{
+    background-color: #ccc;
+    border-radius: 10px ;
+    padding-left: 20px;
+    padding: 20px;
+    height: 180px;
+    @media (max-width:980px) {
+        width: 100%;
+        padding: 10px;
+        height: 190px;
+     }
+
+    .post-area{
+        display: flex;
+        align-items: center;
+        position: relative;
+        @media (max-width:980px) {
+            width:210px ;
+            font-size: 0.65em;
+            flex-direction: column;
+            width: 100%;
+         }
+
+         form{
+            @media (max-width:980px) {
+                width: 100%;
+             }
+         }
+        
+
+        img{
+            height: 35px;
+            border-radius: 50%;
+            @media (max-width:980px) {
+                margin-bottom: 10px;
+                width: 35px;
+                align-self: center;
+               
+             }
+        }
+
+       textarea{
+         margin-left: 20px;
+         height: 90px;
+         width: 500px;
+         padding: 20px;
+         border: none;
+         margin-bottom: 10px;
+         outline: none;
+         border-radius: 10px;
+         font-size: 0.85em;
+         font-family: 'Poppins';
+         background: rgb(255, 255, 255, 0.7);
+         word-wrap: break-word;
+         resize: none;
+         overflow: hidden;
+         
+         @media (max-width:980px) {
+            width:100% ;
+            margin-left: initial;
+            font-size: 1.1em;
+         }
+       }
+       p{
+        position: absolute;
+        left: 67px;
+        bottom: 10px;
+        font-size: 10px;
+        color: red;
+        @media (max-width:980px) {
+            left: 50px;
+            font-size: 9px;
+         }
+       }
+    }
+
+    .post-add{
+        position: relative;
+        
+            
+
+            input{
+               border: none;
+               font-family: 'Kumbh Sans';
+               outline: none;
+               font-size: 1em;
+               cursor: pointer;
+               float: right;
+               padding: 7px 25px;
+               border-radius: 12.5px;
+               background-color: #1d9bf0;
+               color: #fff;
+               font-size: 10px;
+
+               @media (max-width:980px) {
+                font-size: 1em;
+                padding-bottom: 5px;
+             }
+            
+            }
+        
+    }
+ }
+
+
+
+}
+
+.aside{
+//   background-color: green;
+
+  width: 25%;
+  @media (max-width:980px) {
+    display: none;
+    
+}
+@media (max-width:1100px) {
+    display: none;
+    
+}
+}
+
+
+

@@ -1,0 +1,14 @@
+$theme-color : #1d9bf0;
+.mount{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: $theme-color;
+
+    @media (max-width:980px) {
+        font-size: 1em;
+    }
+}
