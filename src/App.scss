@@ -3,96 +3,85 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 
-$theme-color : #1d9bf0;
+$theme-color : #1d9bf0  ;
 
 body{
-    font-family: 'Kumbh Sans';
+    font-family: 'Kumbh Sans' ;
 }
 
-.wrapper{
-    // max-width: 1280px;
-    // margin: 0 auto;
-    position: relative;
-}
+// .wrapper{
+//     // max-width: 1280px;
+//     // margin: 0 auto;
+//     position: relative;
+// }
 
 
-.login{
-    max-width: 1280px;
-    margin: 0 auto;
-     padding-top: 100px;
-     display: flex;
-     justify-content: space-evenly;
-     gap: 20px;
-
-     @media (max-width:980px) {
-          flex-direction: column;
-        //   padding-top: 50px;
-          gap: 60px;
-          justify-content: center;
-          align-items: center;
-     }
+ .login{
+    
+        display: flex;
+        place-items: center;
+        height: 90vh;
+        // @media (min-width:980px) {
+         
+            
+        // }
+        
 
      .first-half{
         position: relative;
-        margin-top: 100px;
-        @media (max-width:980px) {
-            margin-top: initial;
-            
-       }
+        
         h1{
             font-size: 4.3em;
             font-weight: 800;
             margin-bottom: 10px;
             color: $theme-color;
             @media (max-width:980px) {
-                font-size: 3.3em;
+                font-size: 3.8em;
            }
         }
 
         p{
             font-size: 1.8em;
             font-weight: 600;
+            text-align: center;
             @media (max-width:980px) {
                 font-size: 1.3em;
-                text-align: center;
+                
            }
         }
      }
 
      .second-half{
         position: relative;
-        @media (max-width:980px) {
-            .words{
-                display: flex ;
-                justify-content: center;
-            }
+        // @media (min-width:1100px) {
+        //   bottom: 50px;
             
-       }
-       
-        
-         
+        // }
         .half{
+
+            .words{
+                h1{
+                    font-size: 2.2em;
+                    @media (max-width: 1110px) {
+                        font-size: 2em;
+                    }
+                    @media (max-width: 983px) {
+                        font-size: 1.8em;
+                    }
+                    @media (max-width: 910px) {
+                        font-size: 1.6em;
+                    }
+                    @media (max-width: 710px) {
+                        font-size: 1.5em;
+                    }
+                    @media (max-width: 410px) {
+                        font-size: 1.2em;
+                    }
+                }
+            }
             
             padding: 20px;
 
-            h1{
-                font-size: 4rem;
-                margin-bottom: 25px;
-                @media (max-width:980px) {
-                    font-size: 1em;
-                    
-               }
-            }
-
-            h3{
-                font-size: 1.9em;
-                margin-bottom: 35px;
-                margin-left: 16px;
-                @media (max-width:980px) {
-                    font-size: 1em;
-                    
-               }
-            }
 
             .sign{
                 width: fit-content;
@@ -105,30 +94,36 @@ body{
                     font-family: 'Poppins';
                     border: 1px solid #ccc;
                     font-size: 0.9em;
-                    border-radius: 25px;
-                    cursor: pointer;
-                    transition: 250ms ease-in;
+                    border-radius: 50px;
+                    // cursor: pointer;
+                    // transition: 250ms ease-in;
                     font-weight: 600;
                     width: 300px;
-                    outline: none;
+                    // outline: none;
 
                     &.google{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background: none;
-                        padding: 8px 30px;
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+                        // background: none;
+                        // padding: 8px 30px;
+                        text-transform: capitalize;
+                        color: #000;
+                        padding: 7px;
                         
                         img{
                             height: 19px;
-                            margin-right: 9px;
+                            
                         }
                     }
 
                     &.create{
-                        padding: 8px 62px;
-                        background-color:$theme-color ;
-                        color: #fff;
+                        // padding: 8px 62px;
+                        padding: 8px;
+                        // background-color:$theme-color ;
+                        text-transform: capitalize;
+                        // color: #fff;
+                        border: none;
                         margin-bottom: 8px;
                     }
 
@@ -142,7 +137,7 @@ body{
             }
 
             .agree{
-                font-size: 0.7em;
+                font-size: 0.8em;
                 @media (max-width:980px) {
                     font-size: 0.6em;
                     
